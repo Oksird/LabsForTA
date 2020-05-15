@@ -15,9 +15,9 @@ public class Finder {
         int maxY = 300000;
         int maxHeight = 828;
         // Structure of object
-        int x= random.nextInt(maxX);
-        int y = random.nextInt(maxY);
-        int height = random.nextInt(maxHeight);
+        int x;
+        int y;
+        int height;
         // Count of elements
         int count = 1000000;
         int result = 0;
@@ -37,6 +37,9 @@ public class Finder {
             String[] data = new String[3];
             long start = System.currentTimeMillis();
             for (int i = 0; i <count ; i++) {                                //n
+                x=random.nextInt(maxX);
+                y= random.nextInt(maxY);
+                height= random.nextInt(maxHeight);
                 data[0]= String.valueOf(x);                                  //1
                 data[1] = String.valueOf(y);                                 //1
                 data[2] = String.valueOf(height);                            //1
