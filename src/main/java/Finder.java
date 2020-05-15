@@ -35,7 +35,7 @@ public class Finder {
             long start = System.currentTimeMillis();
             for (int i = 0; i <count ; i++) {                             //n
                 data[0]= String.valueOf(random.nextInt(maxX));     //1
-                data[1] = String.valueOf(random.nextInt(maxX));    //1
+                data[1] = String.valueOf(random.nextInt(maxY));    //1
                 data[2] = String.valueOf(random.nextInt(maxHeight));       //1
                 if(Integer.parseInt(data[2])>heightToCompare)                           //1
                     result++;                                               //1
